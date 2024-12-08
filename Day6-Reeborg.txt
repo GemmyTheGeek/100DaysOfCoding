@@ -1,0 +1,16 @@
+def right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+while True:
+    if at_goal():
+        done()
+    if right_is_clear():
+        right()
+        move()
+    elif front_is_clear():
+        move()
+    else:
+        turn_left()
+        
